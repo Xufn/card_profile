@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <a href="#">
+                <img src="p3.png" alt="">
+            </a>
+            <div class="title">Andrew Neil</div>
+            <div class="place">Surkher, Nepal</div>
+        </div>
+
+
+        <div class="content">
+            <p>User Interface Designer and <br> font-end developer</p>
+            <div class="buttons">
+                <div class="btn">
+                    <button>Message</button>
+                </div>
+                <div class="btn">
+                    <button>Following</button>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+        </div>
+    </div>
+    <script>
+		  const img = document.querySelector("img");
+		  const icons = document.querySelector(".icons");
+		  img.onclick = function(){
+			this.classList.toggle("active");
+			icons.classList.toggle("active");
+		  }
+	</script>
+</body>
+</html>
